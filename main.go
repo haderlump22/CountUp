@@ -8,13 +8,10 @@ import (
 const ClearLine = "\033[2K\r"
 
 func main() {
-	// for i := 1; i < 60; i++ {
-	// 	fmt.Print(i)
-	// 	time.Sleep(1 * time.Second)
-	// 	fmt.Print(ClearLine)
-	// }
+	// Fastenzeitstart in 2023
 	start := time.Date(2023, 02, 22, 0, 0, 0, 0, time.Local)
 
+	// berechne Zeit seit Begin der Fastenzeit ohne Süsigkeiten
 	for {
 		aktuell := time.Now()
 		Abstand := aktuell.Sub(start)
